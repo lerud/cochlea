@@ -20,7 +20,7 @@ along with cochlea.  If not, see <http://www.gnu.org/licenses/>.
 import numpy as np
 from libc.stdlib cimport malloc
 import scipy.signal as dsp
-import ffGn_module
+from . import ffGn_module
 
 cimport numpy as np
 

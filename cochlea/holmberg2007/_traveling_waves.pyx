@@ -39,7 +39,7 @@ cdef extern from "math.h":
     double fabs(double x)
 
 
-import bm_pars
+from . import bm_pars
 
 
 
