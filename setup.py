@@ -58,7 +58,7 @@ setup(
         "cochlea.asr": ["*.csv"]
     },
     include_dirs = [numpy.get_include()],
-    ext_modules = cythonize(extensions),
+    ext_modules = cythonize(extensions, compiler_directives={"cpow": True}),
     long_description = long_description,
     classifiers = [
         "Development Status :: 5 - Production/Stable",
